@@ -17,3 +17,17 @@
 
   http://www.imparareaprogrammare.it
 */
+
+let gatti = 42;
+let gattiPerFila = 6;
+let file = gatti/gattiPerFila;
+
+console.log('Numero di file: '+ Math.ceil(file));
+
+let resto = gatti%gattiPerFila;
+
+if(resto <= 0) {
+    console.log('Gatti mancanti: '+ 0);
+}
+else
+    console.log('Gatti mancanti: '+ (gattiPerFila-resto));
