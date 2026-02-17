@@ -11,3 +11,13 @@
 
   http://www.imparareaprogrammare.it
 */
+
+const prompt = require('prompt-sync')();
+let birthYear = prompt("Anno di nascita?");
+
+let currentYear = 2026;
+
+let age = currentYear-birthYear;
+
+console.log(`Età: ${age}
+Anni mancanti: ${100 - age}`);

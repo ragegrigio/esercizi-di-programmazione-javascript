@@ -12,3 +12,18 @@
 
   http://www.imparareaprogrammare.it
 */
+
+const prompt = require('prompt-sync')();
+
+console.log("Inserire i secondi da convertire")
+let seconds = prompt("");
+
+let secondsPerHours = seconds - (seconds%3600)
+let hours = secondsPerHours / 3600;
+let finalSeconds = seconds%60;
+let minutes = ((seconds%3600) - finalSeconds)/60;
+
+
+console.log(hours);
+console.log(minutes);
+console.log(finalSeconds);
