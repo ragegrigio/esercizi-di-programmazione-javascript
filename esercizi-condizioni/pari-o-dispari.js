@@ -15,3 +15,12 @@
 
   http://www.imparareaprogrammare.it
 */
+
+const prompt = require('prompt-sync')();
+let number = prompt("Dammi un numero e ti dirò se è pari o dispari");
+
+if (number%2 < 1) {
+  console.log(`${0}! (che se non lo sapessi vuol dire che il numero è pari)`)
+} else {
+  console.log(`${1}! (che se non lo sapessi vuol dire che il numero è dispari)`)
+}
