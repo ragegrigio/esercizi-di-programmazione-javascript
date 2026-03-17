@@ -19,3 +19,20 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+let miao = "";
+let max = 123;
+
+for (let i = 1; i <= max; i++) {
+  miao += i
+  if ((i % 10) === 0) {
+  miao += "\n";
+    continue;
+  }
+  if (i < max) {
+  miao += "-";
+  }
+}
+
+console.log(miao);

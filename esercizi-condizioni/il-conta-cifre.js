@@ -14,7 +14,7 @@
 
 const prompt = require('prompt-sync')();
 let number = prompt("Dammi un numero e ti dirò quante cifre ha (massimo 9999)");
-countCifre(number)
+countCifre(17)
 
 function countCifre(a) {
     if (a <= 9) {

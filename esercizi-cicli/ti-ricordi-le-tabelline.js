@@ -8,3 +8,16 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+let str = "";
+let tabellina = 8;
+
+for (let i = 0; i <= 10; i++) {
+  str += tabellina * i;
+  if (i < 10) {
+    str += " ";
+  }
+}
+
+console.log(str);
