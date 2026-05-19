@@ -14,3 +14,45 @@
 
   http://www.imparareaprogrammare.it
 */
+
+const prompt = require('prompt-sync')();
+let rollNumber = prompt("Quante volte vuoi lanciare il dado? > ");
+
+let gamerOne = sumDiceRoll();
+let gamerTwo = sumDiceRoll();
+
+console.log("Giocatore 1 ha totalizzato > " + gamerOne);
+console.log("Giocatore 2 ha totalizzato > " + gamerTwo);
+
+if (gamerOne < gamerTwo) {
+  console.log('Giocatore 2 ha vinto!')
+}
+if (gamerOne > gamerTwo) {
+  console.log('Giocatore 1 ha vinto!')
+}
+if (gamerOne === gamerTwo) {
+  console.log('Pareggio!')
+}
+
+function diceRoll() {
+  let roll = Math.floor(Math.random() * (6-1) + 1);
+  return roll;
+}
+
+// function sumDiceRoll() {
+//   let result = 0;
+//   for (let i = 1; i <= rollNumber; i++) {
+//     result += diceRoll();
+//   }
+//   return result;
+// }
+
+function sumDiceRoll() {
+  let result = 0;
+  let i = 1;
+  while (i <= rollNumber) {
+    i++;
+    result += diceRoll();
+  }
+  return result;
+}

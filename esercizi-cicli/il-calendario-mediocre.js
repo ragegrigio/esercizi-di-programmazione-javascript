@@ -45,3 +45,47 @@
 
   http://www.imparareaprogrammare.it
 */
+
+let dayMapping = {
+  0: "Lunedì",
+  1: "Martedì",
+  2: "Mercoledì",
+  3: "Giovedì",
+  4: "Venerdì",
+  5: "Sabato",
+  6: "Domenica",
+}
+
+let monthMapping = {
+  gennaio: 31,
+  febbraio: 28,
+  marzo: 31,
+  aprile: 30,
+  maggio: 31,
+  giugno: 30,
+  luglio: 31,
+  agosto: 31,
+  settembre: 30,
+  ottobre: 31,
+  novembre: 30,
+  dicembre: 31,
+}
+
+
+let daysInMonth = monthMapping.Agosto;
+let currentDay = 4;
+
+for (let i = 1; i <= daysInMonth; i++) {;
+  let day = dayMapping[currentDay]
+  // console.log(day);
+
+
+  if (currentDay < 7) {
+    currentDay++;
+  }
+  if (currentDay >= 7) {
+    currentDay = 0;
+  }
+
+  console.log(i + " " + day)
+}
