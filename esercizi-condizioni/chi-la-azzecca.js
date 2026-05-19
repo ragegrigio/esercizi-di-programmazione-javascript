@@ -20,6 +20,8 @@
   http://www.imparareaprogrammare.it
 */
 
+const { getRandomNumber } = require('../commonFunction');
+
 
 const prompt = require('prompt-sync')();
 
@@ -27,7 +29,7 @@ console.log("Chi si avvicina di più?")
 let gamerOne = prompt("Giocatore 1 scegli il tuo numero. > ");
 console.clear();
 let gamerTwo = prompt("Giocatore 2 scegli il tuo numero. > ");
-let randomNumber = Math.floor(Math.random() * (100-1) + 1);
+let randomNumber = getRandomNumber(100);
 
 console.log(gamerOne);
 console.log(gamerTwo);
@@ -71,3 +73,4 @@ function modulo(numero) {
 }
   return numero;
 }
+
